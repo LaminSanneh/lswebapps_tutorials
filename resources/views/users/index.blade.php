@@ -1,0 +1,13 @@
+@extends('layouts.master')
+
+@section('content')
+
+{{-- @include('partials.sidebar') --}}
+
+<h2>Users</h2>
+<ul>
+  @foreach($users as $user)
+    <li>{{ $user->name }}</li>
+  @endforeach
+</ul>
+@endsection
